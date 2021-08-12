@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão</title>
+</head>
+<body>
+    <input type="button" value="Alertar" onclick="alertar()">
+    <input type="button" value="Confirmar" onclick="confirmar()">
+    <input type="button" value="Perguntar" onclick="perguntar()">
+
+    <script>
+        function alertar ()
+        {
+            alert('Olá, Estou aqui!');
+        }
+        function confirmar()
+        {
+            confirm('Deseja continuar?');
+        }
+        function perguntar()
+        {
+            // Se quiser colocar um auto preenchimento
+            // prompt('Qual é o seu nome?', 'eu tenho ');
+
+            let nome = prompt('Qual é o seu nome?');
+            alert(`Olá ${nome}, prazer!`);
+        }
+    </script>
+</body>
+</html>
