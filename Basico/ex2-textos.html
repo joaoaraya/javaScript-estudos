@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos</title>
+    <style>
+        input{
+            width: 100%;
+        }
+        div{
+            padding: 10px 20px;
+        }
+        .button{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+    <h2>Dados pessoais:</h2>
+    <div><input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome"></div>
+    <div><input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"></div>
+    <div><input type="number" name="idade" id="idade" placeholder="Idade"></div>
+    <div>
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" name="nascimento" id="nascimento">
+    </div>
+    <h2>Dados de Login:</h2>
+    <div><input type="email" name="email" id="email" placeholder="Seu email"></div>
+    <div>
+        <select name="niveis" id="niveis">
+            <option value="adm">Administrador</option>
+            <option value="user">Usuário</option>
+        </select>
+    </div>
+    <div><input type="password" name="senha" id="senha" placeholder="Senha"></div>
+    <div><input type="password" name="senhaConfirm" id="senhaConfirm" placeholder="Confirme a Senha"></div>
+
+    <div><input type="submit" value="Salvar" class="button"></div>
+</body>
+</html>
