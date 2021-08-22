@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <div >
+        <input type="number" name="tabuada" id="tabuada" placeholder="Digite o número da tabuada">
+        <input type="button" value="Calcular" onclick="calcular()">
+    </div>
+    <div>
+        <table id="tabela">
+
+        </table>
+    </div>
+
+    <script>
+        function calcular()
+        {
+            let tabuada = Number(document.querySelector('input#tabuada').value);
+            let tabela = document.querySelector('table#tabela');
+
+            tabela.innerHTML = '';
+            
+            tabela.innerHTML += `<tr><th>Tabuado do ${tabuada}</th><th>Resultado</th></tr>`;
+
+            for (i=0; i <= 10; i++)
+            {
+                let resultado = tabuada * i;
+                tabela.innerHTML += `<tr><td>${tabuada} x ${i} = </td><td>${resultado}</td></tr>`;
+            }
+
+        }
+    </script>
+</body>
+</html>
