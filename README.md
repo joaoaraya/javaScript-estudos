@@ -1,1 +1,1 @@
-# javaScript-estudos
+# js-estudos-2
